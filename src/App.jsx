@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Logo from "../images/logo2.png";
 import "../dist/css/styles.css";
+import Hero from "../images/food.jpg";
+import Collage from "../images/collage.jpg";
+import Food1 from "../images/img1.jpg";
+import Food2 from "../images/img2.jpg";
+import Food3 from "../images/img3.jpg";
+import Review1 from "../images/Review/review1.jpg";
+import Review2 from "../images/Review/review2.jpg";
 export default function App() {
   //active navbar
   const navigationRef = useRef(null);
@@ -206,11 +213,7 @@ export default function App() {
             <div className="row align-items-center">
               <div className="col-lg-7 col-md12 mb-lg-0 mb-5">
                 <div className="card border-0">
-                  <img
-                    src="../images/food.jpg"
-                    alt=""
-                    className="img-fluid card-img"
-                  />
+                  <img src={Hero} alt="" className="img-fluid card-img" />
                 </div>
               </div>
               <div className="col-lg-5 col-md-12 text-sec">
@@ -257,7 +260,7 @@ export default function App() {
               </div>
               <div className="col-lg-7 col-md-12">
                 <div className="card border-0">
-                  <img src="../images/collage.jpg" alt="" />
+                  <img src={Collage} alt="" />
                 </div>
               </div>
             </div>
@@ -307,7 +310,7 @@ export default function App() {
             <div className="row pt-5">
               <div className="col-lg-4 col-md-6 mb-lg-0 mb-5">
                 <div className="card">
-                  <img src="../images/img3.jpg" alt="Sandwich" />
+                  <img src={Food3} alt="Sandwich" />
                   <div className="pt-3">
                     <h4>Sandwich</h4>
                     <p>Time 5 - 10 Minutes | Serves: 1</p>
@@ -320,7 +323,7 @@ export default function App() {
               </div>
               <div className="col-lg-4 col-md-6 mb-lg-0 mb-5">
                 <div className="card">
-                  <img src="../images/img1.jpg" alt="vege-burger" />
+                  <img src={Food1} alt="vege-burger" />
                   <div className="pt-3">
                     <h4>Vegetarian Burger</h4>
                     <p>Time 30 - 45 Minutes | Serves: 1</p>
@@ -333,7 +336,7 @@ export default function App() {
               </div>
               <div className="col-lg-4 col-md-6 mb-lg-0 mb-5">
                 <div className="card">
-                  <img src="../images/img2.jpg" alt="ham-burger" />
+                  <img src={Food2} alt="ham-burger" />
                   <div className="pt-3">
                     <h4>Ham Burger</h4>
                     <p>Time 30 - 45 Minutes | Serves: 1</p>
@@ -381,10 +384,7 @@ export default function App() {
                     <div className="carousel-inner">
                       <div className="carousel-item active">
                         <div className="carousel-caption ">
-                          <img
-                            src="../images/Review/review1.jpg"
-                            alt="review2"
-                          />
+                          <img src={Review1} alt="review2" />
                           <p>
                             "Far far away, behind the word mountain, far from
                             the countries Vokalia and Consonanti, there live the
@@ -395,10 +395,7 @@ export default function App() {
                       </div>
                       <div className="carousel-item">
                         <div className="carousel-caption">
-                          <img
-                            src="../images/Review/review2.jpg"
-                            alt="review2"
-                          />
+                          <img src={Review2} alt="review2" />
                           <p>
                             Some representative placeholder content for the
                             second slide.
