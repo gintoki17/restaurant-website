@@ -1,6 +1,8 @@
 .book-food{
     width: 100%;
-    background: url(../images/bg/food-frame-with-copy-space-flat-lay.jpg) no-repeat center;
+    background: url(../images/bg/food-frame-with-copy-space-flat-lay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     padding: 4.375rem 0;
