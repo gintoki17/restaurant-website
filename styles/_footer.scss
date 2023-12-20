@@ -1,0 +1,29 @@
+.footer{
+    background: $primary-color;
+
+    .footer-link{
+        font-size: 1rem;
+        color: white;
+        padding: 0 1.875rem;
+
+        @media (max-width:767px){
+            padding: 0 0.7rem;
+        }
+        
+        a{
+            &:hover{
+                color: white !important;
+            }
+        }
+    }
+}
+
+.footer a i{
+    
+     font-size: 1.5rem;
+        color: white;
+        padding: 0 1rem;
+    @media (max-width:767px){
+        padding: 0 0.7rem;
+    }
+}

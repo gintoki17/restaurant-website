@@ -1,0 +1,28 @@
+.explore-food{
+
+    .card{
+        border: none;
+        background-color: transparent;
+        border-radius: 0.9375rem;
+
+        img{
+         border-radius: 0.9375rem;
+         object-fit: cover;
+         height: 20rem;   
+        }
+
+        span{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $primary-color;
+            padding-bottom: 1rem;
+            border-bottom: 0.0625rem solid #eee;
+
+            del{
+                color: $text-gray;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

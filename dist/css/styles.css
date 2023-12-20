@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  transition: all 0.3s ease-out;
+}
+.navigation-wrap .navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+.navigation-wrap .scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+}
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #000080;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+  .text-content {
+    width: 100%;
+  }
+  .navigation-wrap .navbar-brand-img {
+    height: 3.8125rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: white;
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  font-size: 400;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active, :hover, :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0047ab !important;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0047ab;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: #000080;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: "Quciksand", sans-serif;
+  color: #000080;
+  line-height: 3rem;
+}
+
+h4 {
+  color: #000080;
+  font-family: "Quciksand", sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: #0047ab;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: "Quciksand", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #999;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: #0047ab;
+  border: 0.1875rem solid #0047ab;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 0.625rem 1.9rem;
+  line-height: 25px;
+  background-color: white;
+  border: 0.1875rem solid white;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.19);
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: #0047ab;
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: #0047ab;
+  border-color: #0047ab;
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-txt-h2 {
+  color: white;
+}
+
+.top-banner {
+  width: 100%;
+  background: url(../images/banner2.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 9.875rem 0 9.375rem;
+}
+.top-banner p {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    line-height: 2rem;
+    font-size: 2.0625rem;
+  }
+}
+.counter-section {
+  background-color: #0047ab;
+  padding: 2.5rem 0;
+}
+
+.counter-section p {
+  color: white;
+  text-transform: uppercase;
+}
+
+.about-section {
+  background: white;
+}
+.about-section .card, .about-section .card-img {
+  border-radius: 0.625rem;
+}
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+.about-section p {
+  color: #555;
+}
+
+.food-type {
+  padding-top: 3.25rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+.food-type ul li::before {
+  position: absolute;
+  left: -2.1875rem;
+  color: #0047ab;
+  font-size: 1.25rem;
+  font-family: "font Awesome 5 free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.story-section {
+  width: 100%;
+  height: 28.125rem;
+  background: url("../images//banner2.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+}
+.story-section p {
+  color: #555;
+}
+.story-section h2 {
+  color: #0047ab;
+}
+
+@media (max-width: 767px) {
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+}
+.explore-food .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+.explore-food .card img {
+  border-radius: 0.9375rem;
+  object-fit: cover;
+  height: 20rem;
+}
+.explore-food .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0047ab;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #eee;
+}
+.explore-food .card span del {
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.testimonial-section {
+  background-color: #0047ab;
+}
+.testimonial-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background: white;
+  border-radius: 0.937rem;
+}
+@media (max-width: 767px) {
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+}
+@media (max-width: 330px) {
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+}
+.testimonial-section .carousel-item .carousel-caption p {
+  font-size: 1.2rem;
+  line-height: 2.0625rem;
+  padding: 0 11% 0.625rem;
+}
+@media (max-width: 991px) {
+  .testimonial-section .carousel-item .carousel-caption p {
+    padding: 0;
+  }
+}
+.testimonial-section .carousel-item .carousel-caption img {
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+.testimonial-section .carousel-indicators {
+  bottom: -2.8125rem;
+}
+.testimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button:active {
+  opacity: 1;
+}
+
+.faq h4 span {
+  color: #0047ab;
+  font-size: 1.875rem;
+  margin-right: 0.3125rem;
+}
+
+.book-food {
+  width: 100%;
+  background: url(../images/bg/food-frame-with-copy-space-flat-lay.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4.375rem 0;
+}
+.book-food h2 {
+  color: white;
+}
+
+.newsletter {
+  width: 55%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .newsletter {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .newsletter .main-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+.newsletter .form-control {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border: 0.1875rem solid #999;
+  color: #000;
+  font-weight: 700;
+}
+.newsletter .form-control:hover, .newsletter .form-control :focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #0047ab;
+}
+
+.footer {
+  background: #0047ab;
+}
+.footer .footer-link {
+  font-size: 1rem;
+  color: white;
+  padding: 0 1.875rem;
+}
+@media (max-width: 767px) {
+  .footer .footer-link {
+    padding: 0 0.7rem;
+  }
+}
+.footer .footer-link a:hover {
+  color: white !important;
+}
+
+.footer a i {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0 1rem;
+}
+@media (max-width: 767px) {
+  .footer a i {
+    padding: 0 0.7rem;
+  }
+}

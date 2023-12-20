@@ -1,0 +1,33 @@
+.newsletter{
+    width:55%;
+    margin: 0 auto;
+
+    @media (max-width:767px){
+        width: 100%;
+        margin-top: 1rem;
+
+        .main-btn{
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+
+    .form-control{
+        height: 3.225rem;
+        padding: 0 1.25rem;
+        font-size: 0.875rem;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        border: 0.1875rem solid $text-gray;
+        color: #000;
+        font-weight: 700;
+
+        &:hover,:focus{
+            outline: none;
+            box-shadow: none;
+            border-color:$primary-color ;
+        }
+    }
+}
