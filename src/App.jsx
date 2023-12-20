@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Logo from "../images/logo2.png";
 import "../dist/css/styles.css";
-import Hero from "../images/food.jpg";
+import About from "../images/food.jpg";
 import Collage from "../images/collage.jpg";
 import Food1 from "../images/img1.jpg";
 import Food2 from "../images/img2.jpg";
@@ -213,7 +213,7 @@ export default function App() {
             <div className="row align-items-center">
               <div className="col-lg-7 col-md12 mb-lg-0 mb-5">
                 <div className="card border-0">
-                  <img src={Hero} alt="" className="img-fluid card-img" />
+                  <img src={About} alt="" className="img-fluid card-img" />
                 </div>
               </div>
               <div className="col-lg-5 col-md-12 text-sec">
